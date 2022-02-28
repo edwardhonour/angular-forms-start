@@ -1,0 +1,246 @@
+{
+	"uid": "55009",
+	"un": "EHONOUR",
+	"role": "AD",
+	"regions": [{
+			"0": "HQ"
+		},
+		{
+			"1": "Region 1"
+		},
+		{
+			"2": "Region 2"
+		},
+		{
+			"3": "Region 3"
+		},
+		{
+			"4": "Region 4"
+		},
+		{
+			"5": "Region 5"
+		},
+		{
+			"6": "Region 6"
+		},
+		{
+			"7": "Region 7"
+		},
+		{
+			"8": "Region 8"
+		},
+		{
+			"9": "Region 9"
+		},
+		{
+			"10": "Region 10"
+		},
+		{
+			"11": "Region 11"
+		}
+	],
+	"roles": [{
+			"LESPM": "APM"
+		},
+		{
+			"ROLE": "RO"
+		},
+		{
+			"ROLE": "TSD"
+		},
+		{
+			"ROLE": "STAKEHOLDER"
+		},
+		{
+			"ROLE": "CYBER"
+		},
+		{
+			"ROLE": "SA"
+		},
+		{
+			"ROLE": "AD"
+		},
+		{
+			"ROLE": "AC"
+		},
+		{
+			"ROLE": "DC"
+		},
+		{
+			"ROLE": "INSP"
+		}
+	],
+	"privs": [{
+			"1": "Advanced Reporting"
+		},
+		{
+			"2": "Perform Inspection"
+		},
+		{
+			"3": "Level 1 Review"
+		},
+		{
+			"4": "Level 2 Review"
+		},
+		{
+			"5": "APM Review"
+		},
+		{
+			"6": "Create Users"
+		},
+		{
+			"7": "Assign FSA"
+		},
+		{
+			"8": "Maintain Facility"
+		},
+		{
+			"9": "Recall FSA"
+		},
+		{
+			"10": "Edit Threat"
+		},
+		{
+			"17": "Countermeasures"
+		},
+		{
+			"18": "Edit Delegation"
+		},
+		{
+			"19": "All Presented"
+		},
+		{
+			"21": "Rexus Feed"
+		},
+		{
+			"20": "Reassign FSA"
+		},
+		{
+			"100": "Megacenter"
+		},
+		{
+			"101": "Edit Contacts"
+		},
+		{
+			"201": "TSD"
+		},
+		{
+			"22": "View Unknown"
+		},
+		{
+			"508": "Functionality Tests"
+		},
+		{
+			"550": "Sandbox"
+		},
+		{
+			"1000": "FSL Calculator"
+		}
+	],
+	"formData": {
+		"USER_ID": "",
+		"USER_NAME": "",
+		"ROLE": "",
+		"FULL_NAME": "",
+		"REGION_ID": "",
+		"LAST_NAME": "",
+		"FIRST_NAME": "",
+		"EMAIL": "",
+		"ORGANIZATION": "",
+		"CELL_PHONE": "",
+		"PHONE": "",
+		"ADDRESS": "",
+		"ADDRESS2": "",
+		"CITY": "",
+		"STATE": "",
+		"ZIP": "",
+		"INACTIVE": "N",
+		"CREATED_TIME": "",
+		"CREATED_BY": "",
+		"STATUS": "",
+		"EIS_PERSON_ID": "",
+		"SHOW_ALL": "",
+		"USER_TYPE": "",
+		"MASTER_CONTACT_ID": "",
+		"MEGACENTER_ID": "",
+		"DISPATCH_ROLE": "",
+		"SUPERVISOR_ROLE": "",
+		"ADMIN_ROLE": "",
+		"MEGACENTER_CODE": "",
+		"CONTACT_ID": "",
+		"OPERATOR_ID": "",
+		"SHIFT_ID": "",
+		"SEGMENT_ID": "",
+		"CALL_SIGN": "",
+		"TENANT_GROUP": "",
+		"ACADEMY_ID": "",
+		"BASE_SEGMENT_ID": "",
+		"privs": [{
+				"1": "N"
+			},
+			{
+				"2": "N"
+			},
+			{
+				"3": "N"
+			},
+			{
+				"4": "N"
+			},
+			{
+				"5": "N"
+			},
+			{
+				"6": "N"
+			},
+			{
+				"7": "N"
+			},
+			{
+				"8": "N"
+			},
+			{
+				"9": "N"
+			},
+			{
+				"10": "N"
+			},
+			{
+				"17": "N"
+			},
+			{
+				"18": "N"
+			},
+			{
+				"19": "N"
+			},
+			{
+				"21": "N"
+			},
+			{
+				"20": "N"
+			},
+			{
+				"100": "N"
+			},
+			{
+				"101": "N"
+			},
+			{
+				"201": "N"
+			},
+			{
+				"22": "N"
+			},
+			{
+				"508": "N"
+			},
+			{
+				"550": "N"
+			},
+			{
+				"1000": "N"
+			}
+		]
+	}
+}

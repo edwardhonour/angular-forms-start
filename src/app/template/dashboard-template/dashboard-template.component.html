@@ -1,0 +1,244 @@
+<!-- Loading bar -->
+<fuse-loading-bar></fuse-loading-bar>
+<!-- Navigation -->
+<fuse-vertical-navigation
+    class="dark bg-gray-900 print:hidden"
+    [mode]="isScreenSmall ? 'over' : 'side'"
+    [name]="'mainNavigation'"
+    [navigation]="navigation.default"
+    [opened]="!isScreenSmall">
+    <!-- Navigation header hook -->
+    <ng-container fuseVerticalNavigationContentHeader>
+        <div class="flex items-center w-full p-4 pl-6">
+            <!-- Logo -->
+            <div class="flex items-center justify-center">
+                <img
+                    class="w-8"
+                    src="assets/images/logo/logo.svg">
+            </div>
+            <!-- Components -->
+            <div class="flex items-center ml-auto">
+                <notifications></notifications>
+                <user [showAvatar]="false"></user>
+            </div>
+        </div>
+        <!-- User -->
+        <div class="flex flex-col items-center w-full p-4">
+            <div class="relative w-24 h-24">
+                <img
+                    class="w-full h-full rounded-full"
+                    *ngIf="user.avatar"
+                    [src]="user.avatar"
+                    alt="User avatar">
+                <mat-icon
+                    class="icon-size-24"
+                    *ngIf="!user.avatar"
+                    [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full mt-6">
+                <div class="w-full whitespace-nowrap overflow-ellipsis overflow-hidden text-center leading-normal font-medium">
+                    {{user.name}}
+                </div>
+                <div class="w-full mt-0.5 whitespace-nowrap overflow-ellipsis overflow-hidden text-center text-md leading-normal font-medium text-secondary">
+                    {{user.email}}
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <!-- Navigation footer hook -->
+    <ng-container fuseVerticalNavigationContentFooter>
+        <div class="flex flex-0 items-center justify-center h-16 pr-6 pl-2 mt-2 mb-4 opacity-12">
+            <img
+                class="max-w-36"
+                src="assets/images/logo/logo-text-on-dark.svg">
+        </div>
+    </ng-container>
+</fuse-vertical-navigation>
+
+<div
+    class="absolute inset-0 flex flex-col min-w-0 overflow-y-auto"
+    cdkScrollable>
+<!--- THIS IS MOVED INSIDE THE MAIN SECTION AFTER THE FIRST LINE -->
+<div class="relative flex flex-0 items-center w-full h-16 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
+    <!-- Navigation toggle button -->
+    <button
+        mat-icon-button
+        (click)="toggleNavigation('mainNavigation')">
+        <mat-icon [svgIcon]="'heroicons_outline:menu'"></mat-icon>
+    </button>
+    <!-- Components -->
+    <div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2">
+        <languages></languages>
+        <fuse-fullscreen class="hidden md:block"></fuse-fullscreen>
+        <search [appearance]="'bar'"></search>
+        <shortcuts></shortcuts>
+        <messages></messages>
+    </div>
+</div>
+    <!-- Header -->
+    <div class="relative flex-0 py-8 px-4 sm:p-16 overflow-hidden bg-gray-800 dark"  style="padding-bottom: 20px !important; padding-top: 20px !important;">
+        <!-- Background - @formatter:off -->
+        <!-- Rings -->
+        <svg class="absolute inset-0 pointer-events-none"
+             viewBox="0 0 960 540" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+            <g class="text-gray-700 opacity-25" fill="none" stroke="currentColor" stroke-width="100">
+                <circle r="234" cx="196" cy="23"></circle>
+                <circle r="234" cx="790" cy="491"></circle>
+            </g>
+        </svg>
+        <!-- @formatter:on -->
+        <div class="z-10 relative flex flex-col items-center" style="margin-top: 40px;">
+            <h2 class="text-xl font-semibold">Dashboard Template</h2>
+            <div class="mt-1 text-4xl sm:text-7xl font-extrabold tracking-tight leading-tight text-center">
+                {{ data.FULL_NAME }}
+            </div>
+            <div class="max-w-2xl mt-6 sm:text-2xl text-center tracking-tight text-secondary">
+                {{ data.USER_NAME }}<br>
+                {{ data.EMAIL }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+
+<div class="container-fluid p-1" style="margin-top: 10px;">
+    <div class="row">
+        <div class="col-xl-2">
+        </div>
+        <div class="col-xl-10">
+            <div class="card card-body mb-4" style="margin-top: 10px !important;">
+                <div class="row">
+                    <div class="col-xl-1">
+                        <button (click)="showEdit()" class="btn btn-primary">Edit User</button>
+                    </div>
+                </div>
+                <div class="card card-body" *ngIf="editing=='Y'">
+                    <div class="table-responsive">
+                        <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Building Number:</th>
+                                <td>{{ data.BUILDING_NBR }}</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Address:</th>
+                                <td>{{ data.ADDRESS }}<br>{{ data.ADDRESS2 }}</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>{{ data.CITY_NAME }} {{ data.STATE_ABBR }} {{ data.ZIPCODE }}</td>
+                            </tr>
+                            <tr>
+                                <th>FSA Status:</th>
+                                <td>{{ data.C_FSA_STATUS }}</td>
+                            </tr>
+                            <tr>
+                                <th>FSCDO:</th>
+                                <td>{{ data.FSCDO_NAME }}</td>
+                            </tr>
+                            <tr>
+                                <th>FSCDO Title:</th>
+                                <td>{{ data.FSCDO_TITLE }}</td>
+                            </tr>
+                            <tr>
+                                <th>FSCDO Email:</th>
+                                <td>{{ data.FSCDO_EMAIL }}</td>
+                            </tr>
+                            <tr>
+                                <th>Last FSA:</th>
+                                <td>{{ data.LAST_FSA_DATE }}</td>
+                            </tr>
+                            <tr>
+                                <th>Next FSA:</th>
+                                <td>{{ data.NEXT_FSA_DATE }}</td>
+                            </tr>
+                            <tr>
+                                <th>Asset Count:</th>
+                                <td>{{ data.C_BSA_COUNT }}</td>
+                            </tr>
+                            <tr>
+                                <th>Overdue Count:</th>
+                                <td>{{ data.C_OVERDUE_TEST_COUNT }}</td>
+                            </tr>
+                            <tr>
+                                <th>Assigned Inspector:</th>
+                                <td>{{ data.ASSIGNED_INSPECTOR }}</td>
+                            </tr>
+                            <tr>
+                                <th>Special Instructions:</th>
+                                <td>{{ data.SPECIAL_INSTRUCTIONS }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">    <!-- CONTAINER ROW -->
+        <div class="col-xl-2"> &nbsp; </div>
+        <div class="col-xl-5">
+            <h2 style="font-size: 24px;"><b>Dashboard Template</b></h2>
+                <div class="card card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Username: </th>
+                                <td>{{ data.USER_NAME }}</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>User ID: </th>
+                                <td>{{ data.USER_ID }}</td>
+                            </tr>
+                            <tr>
+                                <th>Full Name: </th>
+                                <td>{{ data.FULL_NAME }}</td>
+                            </tr>
+                            <tr>
+                                <th>Region: </th>
+                                <td>{{ data.REGION_ID }}</td>
+                            </tr>
+                            <tr>
+                                <th>Role: </th>
+                                <td>{{ data.ROLE }}</td>
+                            </tr>
+                            <tr>
+                                <th>Address: </th>
+                                <td>{{ data.ADDRESS }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- CARD BODY -->
+            </div>
+            <div class="col-xl-5">
+                <h2 style="font-size: 24px;"><b>Facilities</b></h2>
+                    <div class="card card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Building</th>
+                                    <th>Name</th>
+                                    <th>FSL</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let m of data.facilities">
+                                    <td>{{ m.BUILDING_NBR }}</td>
+                                    <td>{{ m.FACILITY_NAME }}</td>
+                                    <td>{{ m.FSL }}</td>
+                                    <td>{{ m.CITY_NAME }}</td>
+                                    <td>{{ m.STATE_ABBR }}</td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>  

@@ -1,0 +1,235 @@
+{
+	"uid": "55009",
+	"un": "EHONOUR",
+	"role": "AD",
+	"USER_ID": "2998",
+	"USER_NAME": "CBOGEMA",
+	"ROLE": "TSD",
+	"FULL_NAME": "CLAYTON BOGEMA",
+	"REGION_ID": "5",
+	"LAST_NAME": "BOGEMA",
+	"FIRST_NAME": "CLAYTON",
+	"EMAIL": "Clayton.W.Bogema@associates.hq.dhs.gov",
+	"ORGANIZATION": null,
+	"CELL_PHONE": null,
+	"PHONE": "2695650000",
+	"ADDRESS": null,
+	"ADDRESS2": null,
+	"CITY": null,
+	"STATE": null,
+	"ZIP": null,
+	"INACTIVE": "Y",
+	"CREATED_TIME": null,
+	"CREATED_BY": null,
+	"STATUS": null,
+	"EIS_PERSON_ID": null,
+	"SHOW_ALL": "Y",
+	"USER_TYPE": "MIST",
+	"MASTER_CONTACT_ID": "0",
+	"MEGACENTER_ID": "0",
+	"DISPATCH_ROLE": "Y",
+	"SUPERVISOR_ROLE": "N",
+	"ADMIN_ROLE": "N",
+	"MEGACENTER_CODE": "BMC",
+	"CONTACT_ID": null,
+	"OPERATOR_ID": null,
+	"SHIFT_ID": null,
+	"SEGMENT_ID": "FPS",
+	"CALL_SIGN": null,
+	"JSON": null,
+	"TENANT_GROUP": null,
+	"ACADEMY_ID": null,
+	"BASE_SEGMENT_ID": null,
+	"regions": [{
+			"0": "HQ"
+		},
+		{
+			"1": "Region 1"
+		},
+		{
+			"2": "Region 2"
+		},
+		{
+			"3": "Region 3"
+		},
+		{
+			"4": "Region 4"
+		},
+		{
+			"5": "Region 5"
+		},
+		{
+			"6": "Region 6"
+		},
+		{
+			"7": "Region 7"
+		},
+		{
+			"8": "Region 8"
+		},
+		{
+			"9": "Region 9"
+		},
+		{
+			"10": "Region 10"
+		},
+		{
+			"11": "Region 11"
+		}
+	],
+	"roles": [{
+			"LESPM": "APM"
+		},
+		{
+			"ROLE": "RO"
+		},
+		{
+			"ROLE": "TSD"
+		},
+		{
+			"ROLE": "STAKEHOLDER"
+		},
+		{
+			"ROLE": "CYBER"
+		},
+		{
+			"ROLE": "SA"
+		},
+		{
+			"ROLE": "AD"
+		},
+		{
+			"ROLE": "AC"
+		},
+		{
+			"ROLE": "DC"
+		},
+		{
+			"ROLE": "INSP"
+		}
+	],
+	"facilities": [
+		{"FACILITY_ID":"2766556","BUILDING_NBR":"INX891","FACILITY_NAME":"TRAINING - 8825 Nelson B. Klein Parkway","FSL":"3","CITY_NAME":"Indianapolis","STATE_ABBR":"IN","ZIPCODE":"46250"},
+		{"FACILITY_ID":"2766557","BUILDING_NBR":"MNX696","FACILITY_NAME":"TRAINING - U.S. Customs and Border Protection Station","FSL":"3","CITY_NAME":"Duluth","STATE_ABBR":"MN","ZIPCODE":"55811"},
+		{"FACILITY_ID":"2766558","BUILDING_NBR":"WIX778","FACILITY_NAME":"TRAINING - MILWAUKEE GAS LIGHT BUILDING","FSL":"3","CITY_NAME":"Milwaukee","STATE_ABBR":"WI","ZIPCODE":"53202-4616"},
+		{"FACILITY_ID":"2766559","BUILDING_NBR":"OHX215","FACILITY_NAME":"TRAINING - THOMAS D LAMBROS FOB","FSL":"4","CITY_NAME":"Youngstown","STATE_ABBR":"OH","ZIPCODE":"44503"},
+		{"FACILITY_ID":"2766560","BUILDING_NBR":"INX031","FACILITY_NAME":"TRAINING - E. Ross Adair Federal Bbuilding & US Courthouse","FSL":"4","CITY_NAME":"Fort Wayne","STATE_ABBR":"IN","ZIPCODE":"46802-3495"},
+		{"FACILITY_ID":"2766561","BUILDING_NBR":"ILX311","FACILITY_NAME":"TRAINING - STANLEY J. ROSZKOWSKI U.S. COURTHOUSE","FSL":"4","CITY_NAME":"ROCKFORD","STATE_ABBR":"IL","ZIPCODE":"61101-1316"},
+		{"FACILITY_ID":"2766562","BUILDING_NBR":"MIX080","FACILITY_NAME":"TRAINING - United States Courthouse and Post Office","FSL":"3","CITY_NAME":"Marquette","STATE_ABBR":"MI","ZIPCODE":"49855"},
+		{"FACILITY_ID":"2766563","BUILDING_NBR":"WIX754","FACILITY_NAME":"TRAINING - Drug Enforcement Administration District Office","FSL":"3","CITY_NAME":"West Milwaukee","STATE_ABBR":"WI","ZIPCODE":"53219"},
+		{"FACILITY_ID":"2766564","BUILDING_NBR":"ILX447","FACILITY_NAME":"TRAINING - SSA OFFICE, CHICAGO NNW","FSL":"2","CITY_NAME":"Chicago","STATE_ABBR":"IL","ZIPCODE":"60647-2563"},
+		{"FACILITY_ID":"2766565","BUILDING_NBR":"MIX991","FACILITY_NAME":"TRAINING - Rick Finley Building","FSL":"3","CITY_NAME":"Detroit","STATE_ABBR":"MI","ZIPCODE":"48226-2507"},
+		{"FACILITY_ID":"2766566","BUILDING_NBR":"MNX015","FACILITY_NAME":"TRAINING - Gerald W. Heaney US Courthouse and Customhouse","FSL":"4","CITY_NAME":"Duluth","STATE_ABBR":"MN","ZIPCODE":"55802"},
+		{"FACILITY_ID":"2766567","BUILDING_NBR":"INX753","FACILITY_NAME":"TRAINING - COLLEGE PARK PLAZA","FSL":"2","CITY_NAME":"INDIANAPOLIS","STATE_ABBR":"IN","ZIPCODE":"46268-3146"},
+		{"FACILITY_ID":"2766568","BUILDING_NBR":"MIX724","FACILITY_NAME":"TRAINING - Land Port of Entry","FSL":"3","CITY_NAME":"Sault Ste Marie","STATE_ABBR":"MI","ZIPCODE":"49783"},
+		{"FACILITY_ID":"2766569","BUILDING_NBR":"WIX559","FACILITY_NAME":"TRAINING - 125 S JEFFERSON ST","FSL":"3","CITY_NAME":"Green Bay","STATE_ABBR":"WI","ZIPCODE":"54301-4500"}
+	],
+	"privs": [{
+			"1": "Advanced Reporting"
+		},
+		{
+			"2": "Perform Inspection"
+		},
+		{
+			"3": "Level 1 Review"
+		},
+		{
+			"4": "Level 2 Review"
+		},
+		{
+			"5": "APM Review"
+		},
+		{
+			"6": "Create Users"
+		},
+		{
+			"7": "Assign FSA"
+		},
+		{
+			"8": "Maintain Facility"
+		},
+		{
+			"9": "Recall FSA"
+		},
+		{
+			"10": "Edit Threat"
+		},
+		{
+			"17": "Countermeasures"
+		},
+		{
+			"18": "Edit Delegation"
+		},
+		{
+			"19": "All Presented"
+		},
+		{
+			"21": "Rexus Feed"
+		},
+		{
+			"20": "Reassign FSA"
+		},
+		{
+			"100": "Megacenter"
+		},
+		{
+			"101": "Edit Contacts"
+		},
+		{
+			"201": "TSD"
+		},
+		{
+			"22": "View Unknown"
+		},
+		{
+			"508": "Functionality Tests"
+		},
+		{
+			"550": "Sandbox"
+		},
+		{
+			"1000": "FSL Calculator"
+		}
+	],
+	"formData": {
+		"USER_ID": "2998",
+		"USER_NAME": "CBOGEMA",
+		"ROLE": "TSD",
+		"FULL_NAME": "CLAYTON BOGEMA",
+		"REGION_ID": "5",
+		"LAST_NAME": "BOGEMA",
+		"FIRST_NAME": "CLAYTON",
+		"EMAIL": "Clayton.W.Bogema@associates.hq.dhs.gov",
+		"ORGANIZATION": null,
+		"CELL_PHONE": null,
+		"PHONE": "2695650000",
+		"ADDRESS": null,
+		"ADDRESS2": null,
+		"CITY": null,
+		"STATE": null,
+		"ZIP": null,
+		"INACTIVE": "Y",
+		"CREATED_TIME": null,
+		"CREATED_BY": null,
+		"STATUS": null,
+		"EIS_PERSON_ID": null,
+		"SHOW_ALL": "Y",
+		"USER_TYPE": "MIST",
+		"MASTER_CONTACT_ID": "0",
+		"MEGACENTER_ID": "0",
+		"DISPATCH_ROLE": "Y",
+		"SUPERVISOR_ROLE": "N",
+		"ADMIN_ROLE": "N",
+		"MEGACENTER_CODE": "BMC",
+		"CONTACT_ID": null,
+		"OPERATOR_ID": null,
+		"SHIFT_ID": null,
+		"SEGMENT_ID": "FPS",
+		"CALL_SIGN": null,
+		"JSON": null,
+		"TENANT_GROUP": null,
+		"ACADEMY_ID": null,
+		"BASE_SEGMENT_ID": null,
+		"privs": [2, 3, 4, 5]
+	}
+}
