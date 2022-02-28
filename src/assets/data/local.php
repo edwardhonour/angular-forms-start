@@ -79,6 +79,12 @@ if (isset($aa[1])) {
         case 'form-template':
                 $output=process_file('add-user.json');
                 break;
+		case 'lesson-template':
+                $output=process_file('edit-form.json');
+                break;	
+		case 'edit-form':
+                $output=process_file('add-user.json');
+                break;					
         case 'post-edit-form':
 				print_r($data);
                 break;	
@@ -93,8 +99,8 @@ if (isset($aa[1])) {
 	}
 
 
-$o=json_encode($output);
-$o=stripcslashes($o);
+$o=json_encode($output, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
 $o=str_replace('null','""',$o);
 echo $o;
+
 ?>
