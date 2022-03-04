@@ -3,40 +3,52 @@
 	"un": "EHONOUR",
 	"role": "AD",
 	"regions": [{
-			"0": "HQ"
+			"REGION_ID":"0",
+			"REGION_NAME":"HQ"
 		},
 		{
-			"1": "Region 1"
+			"REGION_ID":"1",
+			"REGION_NAME":"Region 1"
 		},
 		{
-			"2": "Region 2"
+			"REGION_ID":"2",
+			"REGION_NAME":"Region 2"
 		},
 		{
-			"3": "Region 3"
+			"REGION_ID":"3",
+			"REGION_NAME":"Region 3"
 		},
 		{
-			"4": "Region 4"
+			"REGION_ID":"4",
+			"REGION_NAME":"Region 4"
 		},
 		{
-			"5": "Region 5"
+			"REGION_ID":"5",
+			"REGION_NAME":"Region 5"
 		},
 		{
-			"6": "Region 6"
+			"REGION_ID":"6",
+			"REGION_NAME":"Region 6"
 		},
 		{
-			"7": "Region 7"
+			"REGION_ID":"7",
+			"REGION_NAME":"Region 7"
 		},
 		{
-			"8": "Region 8"
+			"REGION_ID":"8",
+			"REGION_NAME":"Region 8"
 		},
 		{
-			"9": "Region 9"
+			"REGION_ID":"9",
+			"REGION_NAME":"Region 9"
 		},
 		{
-			"10": "Region 10"
+			"REGION_ID":"10",
+			"REGION_NAME":"Region 10"
 		},
 		{
-			"11": "Region 11"
+			"REGION_ID":"11",
+			"REGION_NAME":"Region 11"
 		}
 	],
 	"roles": [{

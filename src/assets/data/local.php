@@ -83,7 +83,7 @@ if (isset($aa[1])) {
                 $output=process_file('edit-form.json');
                 break;	
 		case 'edit-form':
-                $output=process_file('add-user.json');
+                $output=process_file('edit-form.json');
                 break;					
         case 'post-edit-form':
 				print_r($data);
